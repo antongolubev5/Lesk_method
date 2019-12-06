@@ -208,11 +208,11 @@ if __name__ == "__main__":
     for i in range(len(aim_words)):
         answers, acc = word_similarity(meaning_bts_tokenized[i], aim_words[i])
         print("Исследуем слово ", aim_words[i])
-        print("точность для сравнения на основе пересечения слов  = ", acc)
+        print("Точность для сравнения на основе пересечения слов  = ", acc)
         # print(answers)
 
         answers, acc = word2vec_similarity(meaning_bts_tokenized[i], aim_words[i], embed_dict)
-        print("точность для сравнения на основе word2vec  = ", acc)
+        print("Точность для сравнения на основе word2vec  = ", acc)
         # print(answers)
         print("\n")
 
